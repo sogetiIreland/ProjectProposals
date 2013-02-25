@@ -1,0 +1,16 @@
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectsAndProposals.UserInterface.exe.config
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectsAndProposals.UserInterface.exe
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectsAndProposals.UserInterface.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectAndProposals.BusinessEntity.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectAndProposals.BusinessEntity.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Release\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.Login.resources
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.ProjectDetails.resources
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.Properties.Resources.resources
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.csproj.GenerateResource.Cache
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.exe
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Release\Sogeti.ProjectsAndProposals.UserInterface.pdb

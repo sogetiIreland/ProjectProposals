@@ -1,0 +1,7 @@
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectsAndProposals.Database.csprojResolveAssemblyReference.cache
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectAndProposals.Database.pdb

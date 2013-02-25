@@ -1,0 +1,4 @@
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\obj\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\obj\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb

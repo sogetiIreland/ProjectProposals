@@ -1,7 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiProjectAndProposals", "SogetiProjectAndProposals\SogetiProjectAndProposals.csproj", "{EBE5A3F0-42E2-409E-9205-BF5428379BE6}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sogeti.ProjectAndProposals.BusinessEntity", "Sogeti.ProjectAndProposals.BusinessEntity\Sogeti.ProjectAndProposals.BusinessEntity.csproj", "{19D1BA4E-380B-42B1-B635-8CF2742211EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sogeti.ProjectsAndProposals.Database", "Sogeti.ProjectAndProposals.Database\Sogeti.ProjectsAndProposals.Database.csproj", "{0D5A67B1-4497-44B3-8E9A-07C692088BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sogeti.ProjectsAndProposals.DataObjects", "Sogeti.ProjectsAndProposals.DataObjects\Sogeti.ProjectsAndProposals.DataObjects.csproj", "{46DE814A-7562-4D5A-BEB5-FFD2DF91E7E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sogeti.ProjectsAndProposals.UserInterface", "Sogeti.ProjectsAndProposals.UserInterface\Sogeti.ProjectsAndProposals.UserInterface.csproj", "{A08147A0-560D-4C6A-A06E-7B49018FE452}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +15,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EBE5A3F0-42E2-409E-9205-BF5428379BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBE5A3F0-42E2-409E-9205-BF5428379BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBE5A3F0-42E2-409E-9205-BF5428379BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBE5A3F0-42E2-409E-9205-BF5428379BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D1BA4E-380B-42B1-B635-8CF2742211EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D1BA4E-380B-42B1-B635-8CF2742211EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D1BA4E-380B-42B1-B635-8CF2742211EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D1BA4E-380B-42B1-B635-8CF2742211EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5A67B1-4497-44B3-8E9A-07C692088BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5A67B1-4497-44B3-8E9A-07C692088BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5A67B1-4497-44B3-8E9A-07C692088BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5A67B1-4497-44B3-8E9A-07C692088BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DE814A-7562-4D5A-BEB5-FFD2DF91E7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DE814A-7562-4D5A-BEB5-FFD2DF91E7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DE814A-7562-4D5A-BEB5-FFD2DF91E7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DE814A-7562-4D5A-BEB5-FFD2DF91E7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08147A0-560D-4C6A-A06E-7B49018FE452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08147A0-560D-4C6A-A06E-7B49018FE452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08147A0-560D-4C6A-A06E-7B49018FE452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08147A0-560D-4C6A-A06E-7B49018FE452}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
