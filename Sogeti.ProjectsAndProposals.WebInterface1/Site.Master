@@ -1,8 +1,8 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Sogeti.ProjectsAndProposals.WebInterface1.SiteMaster" %>
 
 <!DOCTYPE html>
 <html lang="en">
-<head id="Head1" runat="server">
+<head runat="server">
     <meta charset="utf-8" />
     <title><%: Page.Title %> - Projects and Proposals MIS</title>
     <asp:PlaceHolder ID="PlaceHolder1" runat="server">     
@@ -11,16 +11,6 @@
     <webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" /> 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-
-    <%--<link rel="stylesheet" type="text/css" href="Content/datePicker.css" />
-    <script type="text/javascript" src="Scripts/jquery-1.7.1.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.datePicker.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $('#startdate').datepicker({ dateFormat: 'dd/mm/yyyy' });
-            $('#enddate').datepicker({ dateFormat: 'dd/mm/yyyy' });
-        });
-    </script>--%>
 
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
 
