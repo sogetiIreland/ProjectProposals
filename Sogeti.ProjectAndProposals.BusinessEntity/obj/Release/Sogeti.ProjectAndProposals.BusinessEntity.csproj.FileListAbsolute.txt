@@ -7,3 +7,12 @@ C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAnd
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.BusinessEntity\obj\Release\Sogeti.ProjectAndProposals.BusinessEntity.csprojResolveAssemblyReference.cache
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.BusinessEntity\obj\Release\Sogeti.ProjectAndProposals.BusinessEntity.dll
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectAndProposals.BusinessEntity\obj\Release\Sogeti.ProjectAndProposals.BusinessEntity.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Release\Sogeti.ProjectAndProposals.BusinessEntity.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Release\Sogeti.ProjectAndProposals.BusinessEntity.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Release\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Release\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Release\Sogeti.ProjectAndProposals.BusinessEntity.csprojResolveAssemblyReference.cache
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Release\Sogeti.ProjectAndProposals.BusinessEntity.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Release\Sogeti.ProjectAndProposals.BusinessEntity.pdb

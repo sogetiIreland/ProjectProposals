@@ -187,6 +187,7 @@
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
     <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logo.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
     <Content Include="Images\orderedList2.png" />
@@ -198,6 +199,8 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\projectsandproposalsbh - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\projectsandproposalsbh - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="ProjectDetails.aspx" />
     <Content Include="Scripts\jquery-1.7.1.js" />

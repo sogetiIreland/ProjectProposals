@@ -14,26 +14,28 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
         public Client client { get; set; }
         public Person sogetiPractitioner { get; set; }
         public Person accountManager { get; set; }
+        public Person deliveryManager { get; set; }
         public Person administrator { get; set; }
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
         public DateTime revisedDate { get; set; }
+        public List<ProjectStatus> projectStatus { get; set; }
 
         public bool loadProject() 
         {
-            //
+            // Add logic
             return false;
         }
 
         public bool saveProject()
         {
-            //
+            // Add logic
             return false;
         }
 
         public bool updateProject()
         {
-            //
+            // Add logic
             return false;
         }
 
