@@ -8,7 +8,17 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class Status
     {
+        public Status()
+        {
+        }
+
+        public Status(long id, string description)
+        {
+            this.id = id;
+            this.description = description;
+        }
+
         public long id { get; set; }
-        public Item item { get; set; }
+        public string description { get; set; }
     }
 }

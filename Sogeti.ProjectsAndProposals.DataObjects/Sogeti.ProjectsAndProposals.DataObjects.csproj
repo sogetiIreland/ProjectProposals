@@ -41,7 +41,7 @@
   <ItemGroup>
     <Compile Include="Category.cs" />
     <Compile Include="Client.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Title.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="ProjectStatus.cs" />
