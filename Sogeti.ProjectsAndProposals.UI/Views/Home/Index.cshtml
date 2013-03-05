@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Projects & Proposals MIS";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+            </hgroup>
+            <p>
+                
+            </p>
+        </div>
+    </section>
+}
+<h3>Select a Project:</h3>
+
+<section>
+    @using (Html.BeginForm("ProjectDetails", "Home", FormMethod.Post)) {
+        <fieldset>
+            <legend>Select a Project:</legend>
+            @Html.DropDownList("ProjectList")
+            <p>
+                <input type="submit" value="Select" />
+            </p>
+        </fieldset>
+    }
+</section>

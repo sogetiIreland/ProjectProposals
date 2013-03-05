@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Project Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<table style="width: 75%;">
+        <tr>
+            <td>@Html.Label("Project Name:")</td>
+            <td>@ViewBag.SelectedProject.name</td>
+            <td>@Html.Label("Client:")</td>
+            <td>@ViewBag.SelectedProject.client.clientName</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Description:")</td>
+            <td colspan="3">@ViewBag.SelectedProject.description</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Sogeti Practitioner:")</td>
+            <td>@ViewBag.SelectedProject.sogetiPractitioner.firstName @ViewBag.SelectedProject.sogetiPractitioner.lastName</td>
+            <td>@Html.Label("Account Manager:")</td>
+            <td>@ViewBag.SelectedProject.accountManager.firstName @ViewBag.SelectedProject.accountManager.lastName</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Delivery Manager:")</td>
+            <td>@ViewBag.SelectedProject.deliveryManager.firstName @ViewBag.SelectedProject.deliveryManager.lastName</td>
+            <td>@Html.Label("Administrator:")</td>
+            <td>@ViewBag.SelectedProject.administrator.firstName @ViewBag.SelectedProject.administrator.lastName</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Start Date:")</td>
+            <td>@ViewBag.SelectedProject.startDate</td>
+            <td>@Html.Label("End Date:")</td>
+            <td>@ViewBag.SelectedProject.endDate</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Revised Date:")</td>
+            <td>@ViewBag.SelectedProject.revisedDate</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>

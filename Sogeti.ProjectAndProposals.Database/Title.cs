@@ -12,7 +12,7 @@ namespace Sogeti.ProjectsAndProposals.Database
 {
     public class Title
     {
-        public static DataObjects.Title GetTitle(int id)
+        public static DataObjects.Title GetTitle(int id, int statusID)
         {
             SqlParameter param = new SqlParameter("ID", typeof(System.Int32));
             param.Value = id;
@@ -28,7 +28,7 @@ namespace Sogeti.ProjectsAndProposals.Database
                 {
                     title.id = Convert.ToInt32(dsTitleDetail.Tables[0].Rows[0]["id"]);
                     title.description = dsTitleDetail.Tables[0].Rows[0]["Description"].ToString();
-                    title.category = Database.Category.GetCategory(Convert.ToInt32(dsTitleDetail.Tables[0].Rows[0]["CategoryID"]));
+                    title.status = Database.Status.GetStatus(statusID);
                 }
             }
 

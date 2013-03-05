@@ -22,7 +22,7 @@ namespace Sogeti.ProjectsAndProposals.UserInterface
             prjDetails = new DataObjects.Project();
             prjBAL = new BusinessEntity.Project();
 
-            prjDetails = prjBAL.LoadExistingProject(0);
+            prjDetails = prjBAL.LoadProject(0);
         }
         #endregion
 
@@ -99,7 +99,7 @@ namespace Sogeti.ProjectsAndProposals.UserInterface
         private void btn_LoadNext_Click(object sender, EventArgs e)
         {
             ClearBinding();
-            prjDetails = prjBAL.LoadExistingProject(1);
+            prjDetails = prjBAL.LoadProject(1);
             BindProjectDetails();
         }
     }
