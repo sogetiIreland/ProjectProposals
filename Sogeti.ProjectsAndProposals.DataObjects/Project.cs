@@ -8,7 +8,7 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class Project
     {
-        public long projectID { get; set; }
+        public int projectID { get; set; }
         public string name { get; set; }
         public string description { get; set; }
         public Client client { get; set; }

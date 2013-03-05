@@ -12,14 +12,14 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
         {
         }
 
-        public Title(long id, string description, Status status)
+        public Title(int id, string description, Category category)
         {
             this.id = id;
             this.description = description;
             this.status = status;
         }
 
-        public long id { get; set; }
+        public int id { get; set; }
         public string description { get; set; }
         public Status status { get; set; }
     }

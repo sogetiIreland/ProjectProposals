@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+
 using Sogeti.ProjectsAndProposals.DataObjects;
 
 namespace Sogeti.ProjectsAndProposals.Database
@@ -56,7 +59,7 @@ namespace Sogeti.ProjectsAndProposals.Database
 
             prj1.startDate = System.DateTime.Today.AddMonths(-2);
             prjList.Add(prj1);
-            
+
             return prjList[projectID];
         }
 
@@ -70,9 +73,35 @@ namespace Sogeti.ProjectsAndProposals.Database
             return true;
         }
 
-        public static List<DataObjects.Project> GetAllProjects()
+        public List<DataObjects.Project> GetAllProjects()
         {
-            return new List<DataObjects.Project>();
+            Database.Generics gen = new Generics();
+            List<DataObjects.Project> prjList = new List<DataObjects.Project>();
+            DataObjects.Project prj;
+            using (DataSet ds = gen.GetDataFromDB("SELECT * FROM SelectProjects()", CommandType.Text))
+            {
+                if (ds.Tables.Count > 0)
+                {
+                    foreach (DataRow row in ds.Tables[0].Rows)
+                    {
+                        prj = new DataObjects.Project();
+                        prj.projectID = Convert.ToInt32(row["ProjectID"]);
+                        prj.name = row["ProjectName"].ToString();
+                        prj.description = row["ProjectDescription"].ToString();
+                        prj.startDate = Convert.ToDateTime(row["ProjectStartDate"]);
+                        prj.endDate = Convert.ToDateTime(row["ProjectEndDate"]);
+                        prj.revisedDate = Convert.ToDateTime(row["ProjectRevisedDate"]);
+                        prj.client = Database.Client.GetClient(Convert.ToInt32(row["ClientID"]));
+                        prj.administrator = Database.Person.LoadUser(Convert.ToInt32(row["Administrator"]));
+                        prj.accountManager = Database.Person.LoadUser(Convert.ToInt32(row["AccountManager"]));
+                        prj.deliveryManager = Database.Person.LoadUser(Convert.ToInt32(row["DeliveryManager"]));
+                        prj.sogetiPractitioner = Database.Person.LoadUser(Convert.ToInt32(row["SogetiPractitioner"]));
+                        prjList.Add(prj);
+                    }
+                }
+            }
+
+            return prjList;
         }
     }
 }

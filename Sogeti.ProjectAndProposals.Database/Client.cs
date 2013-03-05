@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Data.SqlClient;
 
 using Sogeti.ProjectsAndProposals.DataObjects;
 
@@ -30,6 +31,29 @@ namespace Sogeti.ProjectsAndProposals.Database
             clientele.Add(c2);
 
             return clientele;
+        }
+
+        public static DataObjects.Client GetClient(int clientID)
+        {
+            DataObjects.Client client = new DataObjects.Client();
+            Database.Generics gen = new Generics();
+            List<SqlParameter> param = new List<SqlParameter>();
+            SqlParameter parm = new SqlParameter("@clientID", typeof(System.Int32));
+            parm.Value = clientID;
+
+            using (DataSet dsClientDetails = gen.GetDataFromDB("SELECT * FROM SelectClientDetails(@ClientID)", CommandType.Text, param))
+            {
+                if ((dsClientDetails.Tables.Count > 0) && (dsClientDetails.Tables[0].Rows.Count > 0))
+                {
+                    client = new DataObjects.Client(Convert.ToInt32(dsClientDetails.Tables[0].Rows[0]["ClientID"]),
+                                                  dsClientDetails.Tables[0].Rows[0]["ClientName"].ToString(),
+                                                  dsClientDetails.Tables[0].Rows[0]["ClientAddress"].ToString(),
+                                                  dsClientDetails.Tables[0].Rows[0]["ClientContactNumber"].ToString(),
+                                                  dsClientDetails.Tables[0].Rows[0]["ShortName"].ToString());
+                }
+            }
+
+            return client;
         }
 
     }
