@@ -14,3 +14,19 @@ C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAn
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectAndProposals.Database.pdb
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.exe
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectsAndProposals.UserInterface.exe.config
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectsAndProposals.UserInterface.exe
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectsAndProposals.UserInterface.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectAndProposals.BusinessEntity.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectAndProposals.BusinessEntity.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\bin\Debug\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.Login.resources
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.ProjectDetails.resources
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.Properties.Resources.resources
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.csproj.GenerateResource.Cache
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.exe
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.UserInterface\obj\Debug\Sogeti.ProjectsAndProposals.UserInterface.pdb

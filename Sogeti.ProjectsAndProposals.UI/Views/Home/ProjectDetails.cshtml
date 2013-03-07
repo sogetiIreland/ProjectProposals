@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Project Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -42,3 +43,52 @@
         </tr>
 
     </table>
+
+<div>
+    <table>
+        <tbody>
+            <tr>
+    @for (int i = 0; i < ViewBag.SelectedProject.projectStatus[0].category.Count; i++)
+    {
+        
+        <td>
+        <table class="whitebg">
+            <caption>@ViewBag.SelectedProject.projectStatus[0].category[i].description</caption>
+            <thead class="customh">
+                <tr>
+                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    <td>@ViewBag.SelectedProject.projectStatus[0].category[i].title[j].description</td>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    <td class="greenbg">Normal</td>
+                    }
+                </tr>
+                <tr>
+                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    <td>Comment</td>
+                    }
+                </tr>
+                <tr>
+                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    <td class="yellowbg">Brief Description Here...</td>
+                    }
+                </tr>
+            </tbody>
+        </table>
+        </td>
+        
+    }
+            </tr>
+        </tbody>
+    </table>
+        
+        
+        
+        
+         
+
+</div>

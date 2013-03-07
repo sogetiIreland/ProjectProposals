@@ -20,7 +20,9 @@ namespace Sogeti.ProjectsAndProposals.UI.Models
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
         public DateTime revisedDate { get; set; }
-        //public List<ProjectStatus> projectStatus { get; set; }
+
+        public DeliveryModel delivery { get; set; }
+        public BusinessDevelopmentModel businessDevelopment { get; set; }
 
         public ProjectModel()
         {
@@ -40,6 +42,26 @@ namespace Sogeti.ProjectsAndProposals.UI.Models
             this.startDate = new DateTime();
             this.endDate = new DateTime();
             this.revisedDate = new DateTime();
+
+        }
+
+        public ProjectModel(long ID, string name, string description, string client, string sogetiPractitioner, DeliveryModel delivery, BusinessDevelopmentModel businessDevelopment)
+        {
+            this.projectID = ID;
+            this.name = name;
+            this.description = description;
+            this.client = client;
+            this.sogetiPractitioner = sogetiPractitioner;
+
+            this.accountManager = "Account Manager";
+            this.deliveryManager = "Delivery Manager";
+            this.administrator = "Administrator";
+            this.startDate = new DateTime();
+            this.endDate = new DateTime();
+            this.revisedDate = new DateTime();
+
+            this.delivery = delivery;
+            this.businessDevelopment = businessDevelopment;
         }
     }
 }

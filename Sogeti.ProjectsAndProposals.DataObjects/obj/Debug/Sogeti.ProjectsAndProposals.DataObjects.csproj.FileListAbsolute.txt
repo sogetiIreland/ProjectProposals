@@ -2,3 +2,7 @@ C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAn
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\obj\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
 C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposalsMIS\Sogeti.ProjectsAndProposals.DataObjects\obj\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\obj\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\obj\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
