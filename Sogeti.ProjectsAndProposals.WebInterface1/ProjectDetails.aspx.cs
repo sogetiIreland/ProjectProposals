@@ -17,7 +17,7 @@ namespace Sogeti.ProjectsAndProposals.WebInterface1
             prjDetails = new DataObjects.Project();
             prjBAL = new BusinessEntity.Project();
 
-            prjDetails = prjBAL.LoadProject(0);
+            prjDetails = prjBAL.LoadProject(1);
 
             LoadDropDowns();
             BindProjectDetails();

@@ -38,7 +38,7 @@ namespace Sogeti.ProjectsAndProposals.Database
 
         public static List<DataObjects.Title> GetTitles(int categoryID, int statusID)
         {
-            SqlParameter param = new SqlParameter("@ID", typeof(System.Int32));
+            SqlParameter param = new SqlParameter("@categoryID", typeof(System.Int32));
             param.Value = categoryID;
             List<SqlParameter> paramList = new List<SqlParameter>();
             paramList.Add(param);

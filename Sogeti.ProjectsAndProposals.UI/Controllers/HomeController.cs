@@ -18,15 +18,12 @@ namespace Sogeti.ProjectsAndProposals.UI.Controllers
 
             List<Models.ProjectIDModel> projectIDlist = GetAllProjectIDs();
 
-            
-#if DEBUG
-                projects.Add(new SelectListItem { Text = "Mock Debug Project", Value = "5" });
-#else
-            for (int i = 0; i < projectIDlist.Count; i++)
+
+            foreach (Models.ProjectIDModel prj in projectIDlist)
             {
-                projects.Add(new SelectListItem { Text = projectIDlist[i].name, Value = projectIDlist[i].projectID.ToString() });
+                projects.Add(new SelectListItem { Text = prj.name, Value = prj.projectID.ToString() });
             }
-#endif
+
             ViewBag.ProjectList = projects;
 
             return View();

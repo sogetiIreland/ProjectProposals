@@ -14,7 +14,8 @@ namespace Sogeti.ProjectsAndProposals.Database
         {
             get
             {
-                return "Data Source=IE-05-11-11-517;Initial Catalog=ProjectsAndProposals;Integrated Security=True";
+                return "Data Source=localhost;Initial Catalog=ProjectsAndProposals;User ID=amabbasi;Password=SogetiIreland;Integrated Security=True";
+                //return "Server=tcp:z59x1q5h4x.database.windows.net,1433;Database=[ProjectsAndProposals];User ID=amabbasi@z59x1q5h4x;Password=SogetiIreland16;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;";
             }
         }
 

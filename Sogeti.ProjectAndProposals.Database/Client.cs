@@ -37,9 +37,10 @@ namespace Sogeti.ProjectsAndProposals.Database
         {
             DataObjects.Client client = new DataObjects.Client();
             Database.Generics gen = new Generics();
-            List<SqlParameter> param = new List<SqlParameter>();
             SqlParameter parm = new SqlParameter("@clientID", typeof(System.Int32));
             parm.Value = clientID;
+            List<SqlParameter> param = new List<SqlParameter>();
+            param.Add(parm);
 
             using (DataSet dsClientDetails = gen.GetDataFromDB("SELECT * FROM SelectClientDetails(@ClientID)", CommandType.Text, param))
             {

@@ -31,13 +31,19 @@
         </tr>
         <tr>
             <td>@Html.Label("Start Date:")</td>
-            <td>@ViewBag.SelectedProject.startDate</td>
+            <td>@ViewBag.SelectedProject.startDate.ToString("dd/MM/yyyy")</td>
             <td>@Html.Label("End Date:")</td>
-            <td>@ViewBag.SelectedProject.endDate</td>
+            @if (ViewBag.SelectedProject.endDate != DateTime.MinValue)
+            {
+                <td>@ViewBag.SelectedProject.endDate.ToString("dd/MM/yyyy")</td>
+            }
         </tr>
         <tr>
             <td>@Html.Label("Revised Date:")</td>
-            <td>@ViewBag.SelectedProject.revisedDate</td>
+            @if (ViewBag.SelectedProject.revisedDate != DateTime.MinValue)
+            {
+                <td>@ViewBag.SelectedProject.revisedDate.ToString("dd/MM/yyyy")</td>
+            }
             <td></td>
             <td></td>
         </tr>

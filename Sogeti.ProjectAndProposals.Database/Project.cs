@@ -14,53 +14,37 @@ namespace Sogeti.ProjectsAndProposals.Database
     {
         public DataObjects.Project LoadProject(int projectID)
         {
-            List<DataObjects.Project> prjList = new List<DataObjects.Project>();
+            Database.Generics genDB = new Generics();
 
             DataObjects.Project prj = new DataObjects.Project();
 
-            prj.accountManager = new DataObjects.Person();
-            prj.accountManager = Sogeti.ProjectsAndProposals.Database.Person.LoadUser(1);
+            SqlParameter param = new SqlParameter("@ProjectID", typeof(System.Int32));
+            param.Value = projectID;
 
-            prj.administrator = new DataObjects.Person();
-            prj.administrator = Sogeti.ProjectsAndProposals.Database.Person.GetAllUsers()[1];
+            List<SqlParameter> paramList = new List<SqlParameter>();
+            paramList.Add(param);
 
-            prj.client = new DataObjects.Client();
-            prj.client = Sogeti.ProjectsAndProposals.Database.Client.GetAllClients()[1];
+            using (DataSet dsProjectDetails = genDB.GetDataFromDB("Select * From SelectProject(@ProjectID)", CommandType.Text, paramList))
+            {
+                if ((dsProjectDetails != null) && (dsProjectDetails.Tables.Count > 0))
+                {
+                    DataRow row = dsProjectDetails.Tables[0].Rows[0];
+                    prj.projectID = Convert.ToInt32(row["ProjectID"]);
+                    prj.name = string.IsNullOrEmpty(row["ProjectName"].ToString()) ? " " : row["ProjectName"].ToString();
+                    prj.description = string.IsNullOrEmpty(row["ProjectDescription"].ToString()) ? " " : row["ProjectDescription"].ToString();
+                    prj.startDate = string.IsNullOrEmpty(row["ProjectStartDate"].ToString()) ? System.DateTime.MinValue : Convert.ToDateTime(row["ProjectStartDate"].ToString());
+                    prj.endDate = string.IsNullOrEmpty(row["ProjectEndDate"].ToString()) ? System.DateTime.MinValue : Convert.ToDateTime(row["ProjectEndDate"].ToString());
+                    prj.revisedDate = string.IsNullOrEmpty(row["ProjectRevisedDate"].ToString()) ? System.DateTime.MinValue : Convert.ToDateTime(row["ProjectReviedDate"].ToString());
+                    prj.client = Database.Client.GetClient(Convert.ToInt32(row["ClientID"]));
+                    prj.administrator = Database.Person.LoadUser(Convert.ToInt32(row["AdminID"]));
+                    prj.accountManager = Database.Person.LoadUser(Convert.ToInt32(row["AccountManagerID"]));
+                    prj.deliveryManager = Database.Person.LoadUser(Convert.ToInt32(row["DeliverManagerID"]));
+                    prj.sogetiPractitioner = Database.Person.LoadUser(Convert.ToInt32(row["SogetiPractitionerID"]));
+                    prj.projectStatus = Database.ProjectStatus.GetAllStatusOfProject(projectID);
+                }
+            }
 
-            prj.description = "Demonstration of Project And Proposals";
-            prj.endDate = System.DateTime.Today.AddYears(2);
-            prj.name = "Project And Proposals";
-            prj.projectID = 0;
-            prj.revisedDate = System.DateTime.Today;
-            prj.sogetiPractitioner = new DataObjects.Person();
-            prj.sogetiPractitioner = Sogeti.ProjectsAndProposals.Database.Person.GetAllUsers()[2];
-
-            prj.startDate = System.DateTime.Today.AddYears(-1);
-            prjList.Add(prj);
-
-            DataObjects.Project prj1 = new DataObjects.Project();
-
-            prj1.accountManager = new DataObjects.Person();
-            prj1.accountManager = Sogeti.ProjectsAndProposals.Database.Person.LoadUser(0);
-
-            prj1.administrator = new DataObjects.Person();
-            prj1.administrator = Sogeti.ProjectsAndProposals.Database.Person.GetAllUsers()[2];
-
-            prj1.client = new DataObjects.Client();
-            prj1.client = Sogeti.ProjectsAndProposals.Database.Client.GetAllClients()[0];
-
-            prj1.description = "Demo";
-            prj1.endDate = System.DateTime.Today.AddMonths(6);
-            prj1.name = "Internal Projects";
-            prj1.projectID = 1;
-            prj1.revisedDate = System.DateTime.Today.AddDays(-1);
-            prj1.sogetiPractitioner = new DataObjects.Person();
-            prj1.sogetiPractitioner = Sogeti.ProjectsAndProposals.Database.Person.GetAllUsers()[1];
-
-            prj1.startDate = System.DateTime.Today.AddMonths(-2);
-            prjList.Add(prj1);
-
-            return prjList[projectID];
+            return prj;
         }
 
         public static bool SaveProject(DataObjects.Project project)
@@ -87,15 +71,15 @@ namespace Sogeti.ProjectsAndProposals.Database
                         prj = new DataObjects.Project();
                         prj.projectID = Convert.ToInt32(row["ProjectID"]);
                         prj.name = row["ProjectName"].ToString();
-                        prj.description = row["ProjectDescription"].ToString();
-                        prj.startDate = Convert.ToDateTime(row["ProjectStartDate"]);
-                        prj.endDate = Convert.ToDateTime(row["ProjectEndDate"]);
-                        prj.revisedDate = Convert.ToDateTime(row["ProjectRevisedDate"]);
+                        prj.description = string.IsNullOrEmpty(row["ProjectDescription"].ToString()) ? " " : row["ProjectDescription"].ToString();
+                        prj.startDate = string.IsNullOrEmpty(row["ProjectStartDate"].ToString()) ? DateTime.MinValue : Convert.ToDateTime(row["ProjectStartDate"].ToString());
+                        prj.endDate = string.IsNullOrEmpty(row["ProjectEndDate"].ToString()) ? DateTime.MinValue : Convert.ToDateTime(row["ProjectEndDate"].ToString());
+                        prj.revisedDate = string.IsNullOrEmpty(row["ProjectRevisedDate"].ToString()) ? DateTime.MinValue : Convert.ToDateTime(row["ProjectRevisedDate"].ToString());
                         prj.client = Database.Client.GetClient(Convert.ToInt32(row["ClientID"]));
-                        prj.administrator = Database.Person.LoadUser(Convert.ToInt32(row["Administrator"]));
-                        prj.accountManager = Database.Person.LoadUser(Convert.ToInt32(row["AccountManager"]));
-                        prj.deliveryManager = Database.Person.LoadUser(Convert.ToInt32(row["DeliveryManager"]));
-                        prj.sogetiPractitioner = Database.Person.LoadUser(Convert.ToInt32(row["SogetiPractitioner"]));
+                        prj.administrator = Database.Person.LoadUser(Convert.ToInt32(row["AdminID"]));
+                        prj.accountManager = Database.Person.LoadUser(Convert.ToInt32(row["AccountManagerID"]));
+                        prj.deliveryManager = Database.Person.LoadUser(Convert.ToInt32(row["DeliverManagerID"]));
+                        prj.sogetiPractitioner = Database.Person.LoadUser(Convert.ToInt32(row["SogetiPractitionerID"]));
                         prjList.Add(prj);
                     }
                 }
