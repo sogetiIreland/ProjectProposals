@@ -12,7 +12,7 @@ namespace Sogeti.ProjectsAndProposals.UI.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = ".Net MVC 4 Prototype.";
+            ViewBag.Message = ".Net MVC 4 Prototype Testing Azure.";
 
             List<SelectListItem> projects = new List<SelectListItem>();
 

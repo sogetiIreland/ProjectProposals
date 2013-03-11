@@ -5,7 +5,7 @@
         <div class="content-wrapper">
             <hgroup class="title">
                 <h1><%: Title %>.</h1>
-                <h2>Projects and Proposals MIS</h2>
+                <h2>Projects and Proposals MIS Web Interface</h2>
             </hgroup>
             <p>
                 ASP.Net Prototype.
