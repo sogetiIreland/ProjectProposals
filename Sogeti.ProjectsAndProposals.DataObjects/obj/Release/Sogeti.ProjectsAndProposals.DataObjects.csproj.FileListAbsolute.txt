@@ -7,3 +7,8 @@ C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsA
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\obj\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\bin\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\obj\Release\Sogeti.ProjectsAndProposals.DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\obj\Release\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectsAndProposals.DataObjects\obj\Release\Sogeti.ProjectsAndProposals.DataObjects.pdb

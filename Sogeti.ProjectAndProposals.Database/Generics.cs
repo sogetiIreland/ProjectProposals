@@ -15,7 +15,7 @@ namespace Sogeti.ProjectsAndProposals.Database
             get
             {
                 //return "Data Source=localhost;Initial Catalog=ProjectsAndProposals;User ID=amabbasi;Password=SogetiIreland;Integrated Security=True";
-                return "Server=tcp:dufpnqhji7.database.windows.net,1433;Database=ProjectsAndProposals;User Id=amabbasi@dufpnqhji7;Password=SogetiIreland16;Trusted_Connection=False;Encrypt=False;Connection Timeout=30;";
+                return "Server=tcp:dufpnqhji7.database.windows.net,1433;Database=ProjectsAndProposals;User Id=amabbasi@dufpnqhji7;Password=SogetiIreland16;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;";
             }
         }
 
