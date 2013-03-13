@@ -24,7 +24,7 @@ namespace Sogeti.ProjectsAndProposals.BusinessEntity
 
             foreach (DataObjects.Project prj in prjList)
             {
-                prj.projectStatus = Database.ProjectStatus.GetAllStatusOfProject(prj.projectID);
+                prj.ProjectStatus = Database.ProjectStatus.GetAllStatusOfProject(prj.ProjectID);
             }
 
             return prjList;

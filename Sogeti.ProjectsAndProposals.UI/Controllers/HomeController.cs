@@ -139,7 +139,7 @@ namespace Sogeti.ProjectsAndProposals.UI.Controllers
             for (int i = 0; i < projectList.Count; i++)
             {
 
-                Models.ProjectIDModel prjIDMod = new Models.ProjectIDModel(projectList[i].projectID, projectList[i].name);
+                Models.ProjectIDModel prjIDMod = new Models.ProjectIDModel(projectList[i].ProjectID, projectList[i].Name);
                 prjIDModelList.Add(prjIDMod);
             }
 

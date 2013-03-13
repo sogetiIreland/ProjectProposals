@@ -8,30 +8,35 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class Client
     {
+        #region Constructors
         public Client()
         {
-            this.clientID = 0;
-            this.clientName = "";
-            this.clientAddress = "";
-            this.clientContactNumber = "";
-            this.clientShortName = "";
+            this.ClientID = 0;
+            this.ClientName = "";
+            this.ClientAddress = "";
+            this.ClientContactNumber = "";
+            this.ClientShortName = "";
         }
         public Client(int id, string name, string contact, string address, string shortName)
         {
-            this.clientID = id;
-            this.clientName = name;
-            this.clientContactNumber = contact;
-            this.clientAddress = address;
-            this.clientShortName = shortName;
+            this.ClientID = id;
+            this.ClientName = name;
+            this.ClientContactNumber = contact;
+            this.ClientAddress = address;
+            this.ClientShortName = shortName;
         }
+        #endregion
 
-        public int clientID { get; set; }
-        public string clientName { get; set; }
-        public string clientAddress { get; set; }
-        public string clientContactNumber { get; set; }
-        public string clientShortName { get; set; }
+        #region Properties
+        public int ClientID { get; set; }
+        public string ClientName { get; set; }
+        public string ClientAddress { get; set; }
+        public string ClientContactNumber { get; set; }
+        public string ClientShortName { get; set; }
+        #endregion
 
-        public static List<Client> getAllClients() 
+        #region Methods
+        public static List<Client> getAllClients()
         {
             List<Client> clientList = new List<Client>();
 
@@ -39,5 +44,6 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 
             return clientList;
         }
+        #endregion
     }
 }

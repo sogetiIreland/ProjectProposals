@@ -9,40 +9,40 @@
 <table style="width: 75%;">
         <tr>
             <td>@Html.Label("Project Name:")</td>
-            <td>@ViewBag.SelectedProject.name</td>
+            <td>@ViewBag.SelectedProject.Name</td>
             <td>@Html.Label("Client:")</td>
-            <td>@ViewBag.SelectedProject.client.clientName</td>
+            <td>@ViewBag.SelectedProject.Client.ClientName</td>
         </tr>
         <tr>
             <td>@Html.Label("Description:")</td>
-            <td colspan="3">@ViewBag.SelectedProject.description</td>
+            <td colspan="3">@ViewBag.SelectedProject.Description</td>
         </tr>
         <tr>
             <td>@Html.Label("Sogeti Practitioner:")</td>
-            <td>@ViewBag.SelectedProject.sogetiPractitioner.firstName @ViewBag.SelectedProject.sogetiPractitioner.lastName</td>
+            <td>@ViewBag.SelectedProject.SogetiPractitioner.FirstName @ViewBag.SelectedProject.SogetiPractitioner.LastName</td>
             <td>@Html.Label("Account Manager:")</td>
-            <td>@ViewBag.SelectedProject.accountManager.firstName @ViewBag.SelectedProject.accountManager.lastName</td>
+            <td>@ViewBag.SelectedProject.AccountManager.FirstName @ViewBag.SelectedProject.AccountManager.LastName</td>
         </tr>
         <tr>
             <td>@Html.Label("Delivery Manager:")</td>
-            <td>@ViewBag.SelectedProject.deliveryManager.firstName @ViewBag.SelectedProject.deliveryManager.lastName</td>
+            <td>@ViewBag.SelectedProject.DeliveryManager.FirstName @ViewBag.SelectedProject.DeliveryManager.LastName</td>
             <td>@Html.Label("Administrator:")</td>
-            <td>@ViewBag.SelectedProject.administrator.firstName @ViewBag.SelectedProject.administrator.lastName</td>
+            <td>@ViewBag.SelectedProject.Administrator.FirstName @ViewBag.SelectedProject.Administrator.LastName</td>
         </tr>
         <tr>
             <td>@Html.Label("Start Date:")</td>
-            <td>@ViewBag.SelectedProject.startDate.ToString("dd/MM/yyyy")</td>
+            <td>@ViewBag.SelectedProject.StartDate.ToString("dd/MM/yyyy")</td>
             <td>@Html.Label("End Date:")</td>
-            @if (ViewBag.SelectedProject.endDate != DateTime.MinValue)
+            @if (ViewBag.SelectedProject.EndDate != DateTime.MinValue)
             {
-                <td>@ViewBag.SelectedProject.endDate.ToString("dd/MM/yyyy")</td>
+                <td>@ViewBag.SelectedProject.EndDate.ToString("dd/MM/yyyy")</td>
             }
         </tr>
         <tr>
             <td>@Html.Label("Revised Date:")</td>
-            @if (ViewBag.SelectedProject.revisedDate != DateTime.MinValue)
+            @if (ViewBag.SelectedProject.RevisedDate != DateTime.MinValue)
             {
-                <td>@ViewBag.SelectedProject.revisedDate.ToString("dd/MM/yyyy")</td>
+                <td>@ViewBag.SelectedProject.RevisedDate.ToString("dd/MM/yyyy")</td>
             }
             <td></td>
             <td></td>
@@ -54,32 +54,32 @@
     <table>
         <tbody>
             <tr>
-    @for (int i = 0; i < ViewBag.SelectedProject.projectStatus[0].category.Count; i++)
+    @for (int i = 0; i < ViewBag.SelectedProject.ProjectStatus[0].Category.Count; i++)
     {
         
         <td>
         <table class="whitebg">
-            <caption>@ViewBag.SelectedProject.projectStatus[0].category[i].description</caption>
+            @*<caption>@ViewBag.SelectedProject.ProjectStatus[0].Category[i].Title</caption>*@
             <thead class="customh">
                 <tr>
-                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
-                    <td>@ViewBag.SelectedProject.projectStatus[0].category[i].title[j].description</td>
+                    @for (int j = 0; j < ViewBag.SelectedProject.ProjectStatus[0].Category[i].Title.Count; j++) {
+                    <td>@ViewBag.SelectedProject.ProjectStatus[0].Category[i].Title[j].Title</td>
                     }
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    @for (int j = 0; j < ViewBag.SelectedProject.ProjectStatus[0].Category[i].Title.Count; j++) {
                     <td class="greenbg">Normal</td>
                     }
                 </tr>
                 <tr>
-                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    @for (int j = 0; j < ViewBag.SelectedProject.ProjectStatus[0].Category[i].Title.Count; j++) {
                     <td>Comment</td>
                     }
                 </tr>
                 <tr>
-                    @for (int j = 0; j < ViewBag.SelectedProject.projectStatus[0].category[i].title.Count; j++) {
+                    @for (int j = 0; j < ViewBag.SelectedProject.ProjectStatus[0].Category[i].Title.Count; j++) {
                     <td class="yellowbg">Brief Description Here...</td>
                     }
                 </tr>

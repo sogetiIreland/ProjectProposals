@@ -8,24 +8,29 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class Person
     {
+        #region Constructors
         public Person ()
         {
-            this.personID = 0;
-            this.firstName = "";
-            this.lastName = "";
+            this.PersonID = 0;
+            this.FirstName = "";
+            this.LastName = "";
         }
 
         public Person(int id, string fName, string lName)
         {
-            this.personID = id;
-            this.firstName = fName;
-            this.lastName = lName;
+            this.PersonID = id;
+            this.FirstName = fName;
+            this.LastName = lName;
         }
+        #endregion
 
-        public int personID { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
+        #region Properties
+        public int PersonID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        #endregion
 
+        #region Methods
         public bool loadUser(int personID)
         {
             // 
@@ -50,5 +55,6 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
             //
             return personList;
         }
+        #endregion
     }
 }

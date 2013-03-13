@@ -30,10 +30,9 @@ namespace Sogeti.ProjectsAndProposals.Database
                     foreach (DataRow row in ds.Tables[0].Rows)
                     {
                         status = new DataObjects.ProjectStatus();
-                        status.id = Convert.ToInt32(row["id"]);
-                        status.date = Convert.ToDateTime(row["date"]);
-                        status.comment = row["comment"].ToString();
-                        status.category = Database.Category.GetAllCategories(projectID,
+                        status.Id = Convert.ToInt32(row["id"]);
+                        status.Date = Convert.ToDateTime(row["date"]);
+                        status.Category = Database.StatusCategory.GetAllCategories(projectID,
                             Convert.ToInt32(row["titleID"]), 
                             Convert.ToInt32(row["StatusTypeID"]));
 

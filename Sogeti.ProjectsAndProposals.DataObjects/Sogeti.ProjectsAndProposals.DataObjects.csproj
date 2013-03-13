@@ -39,9 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
     <Compile Include="Client.cs" />
-    <Compile Include="Title.cs" />
+    <Compile Include="StatusCategory.cs" />
+    <Compile Include="StatusItem.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="ProjectStatus.cs" />

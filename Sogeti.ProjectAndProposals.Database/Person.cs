@@ -26,9 +26,9 @@ namespace Sogeti.ProjectsAndProposals.Database
             {
                 if ((dsPersonDetails != null) && (dsPersonDetails.Tables.Count > 0))
                 {
-                    person.personID = Convert.ToInt32(dsPersonDetails.Tables[0].Rows[0]["PersonID"]);
-                    person.firstName = dsPersonDetails.Tables[0].Rows[0]["FirstName"].ToString();
-                    person.lastName = dsPersonDetails.Tables[0].Rows[0]["LastName"].ToString();
+                    person.PersonID = Convert.ToInt32(dsPersonDetails.Tables[0].Rows[0]["PersonID"]);
+                    person.FirstName = dsPersonDetails.Tables[0].Rows[0]["FirstName"].ToString();
+                    person.LastName = dsPersonDetails.Tables[0].Rows[0]["LastName"].ToString();
                 }
             }
 
@@ -49,21 +49,21 @@ namespace Sogeti.ProjectsAndProposals.Database
         {
             List<DataObjects.Person> users = new List<DataObjects.Person>();
             DataObjects.Person p1 = new DataObjects.Person();
-            p1.firstName = "Abdul Muneeb";
-            p1.lastName = "Abbasi";
-            p1.personID = 1;
+            p1.FirstName = "Abdul Muneeb";
+            p1.LastName = "Abbasi";
+            p1.PersonID = 1;
             users.Add(p1);
 
             DataObjects.Person p2 = new DataObjects.Person();
-            p2.firstName = "Mark";
-            p2.lastName = "Jones";
-            p2.personID = 2;
+            p2.FirstName = "Mark";
+            p2.LastName = "Jones";
+            p2.PersonID = 2;
             users.Add(p2);
 
             DataObjects.Person p3 = new DataObjects.Person();
-            p3.firstName = "Barry";
-            p3.lastName = "Hollywood";
-            p3.personID = 3;
+            p3.FirstName = "Barry";
+            p3.LastName = "Hollywood";
+            p3.PersonID = 3;
             users.Add(p3);
 
             return users;

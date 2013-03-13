@@ -8,17 +8,21 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class Status
     {
+        #region Constructors
         public Status()
         {
         }
 
         public Status(int id, string description)
         {
-            this.id = id;
-            this.description = description;
+            this.Id = id;
+            this.Description = description;
         }
+        #endregion
 
-        public int id { get; set; }
-        public string description { get; set; }
+        #region Properties
+        public int Id { get; set; }
+        public string Description { get; set; }
+        #endregion Properties
     }
 }

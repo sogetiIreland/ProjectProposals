@@ -8,19 +8,22 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class Project
     {
-        public int projectID { get; set; }
-        public string name { get; set; }
-        public string description { get; set; }
-        public Client client { get; set; }
-        public Person sogetiPractitioner { get; set; }
-        public Person accountManager { get; set; }
-        public Person deliveryManager { get; set; }
-        public Person administrator { get; set; }
-        public DateTime startDate { get; set; }
-        public DateTime endDate { get; set; }
-        public DateTime revisedDate { get; set; }
-        public List<ProjectStatus> projectStatus { get; set; }
+        #region Properties
+        public int ProjectID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public Client Client { get; set; }
+        public Person SogetiPractitioner { get; set; }
+        public Person AccountManager { get; set; }
+        public Person DeliveryManager { get; set; }
+        public Person Administrator { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public DateTime RevisedDate { get; set; }
+        public List<ProjectStatus> ProjectStatus { get; set; }
+        #endregion
 
+        #region Methods
         public bool loadProject() 
         {
             // Add logic
@@ -47,5 +50,6 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 
             return projectList;
         }
+        #endregion
     }
 }

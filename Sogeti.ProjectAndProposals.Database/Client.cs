@@ -17,17 +17,17 @@ namespace Sogeti.ProjectsAndProposals.Database
             List<DataObjects.Client> clientele = new List<DataObjects.Client>();
 
             DataObjects.Client c1 = new DataObjects.Client();
-            c1.clientID = 1;
-            c1.clientName = "Vodafone";
-            c1.clientAddress = "Dublin, Ireland";
-            c1.clientContactNumber = "0871234";
+            c1.ClientID = 1;
+            c1.ClientName = "Vodafone";
+            c1.ClientAddress = "Dublin, Ireland";
+            c1.ClientContactNumber = "0871234";
             clientele.Add(c1);
 
             DataObjects.Client c2 = new DataObjects.Client();
-            c2.clientID = 2;
-            c2.clientName = "O2";
-            c2.clientAddress = "Cork, Ireland";
-            c2.clientContactNumber = "0861234";
+            c2.ClientID = 2;
+            c2.ClientName = "O2";
+            c2.ClientAddress = "Cork, Ireland";
+            c2.ClientContactNumber = "0861234";
             clientele.Add(c2);
 
             return clientele;

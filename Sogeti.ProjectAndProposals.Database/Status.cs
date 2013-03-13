@@ -28,8 +28,8 @@ namespace Sogeti.ProjectsAndProposals.Database
             {
                 if ((dsStatusDetail != null) && (dsStatusDetail.Tables.Count > 0))
                 {
-                    status.id = Convert.ToInt32(dsStatusDetail.Tables[0].Rows[0]["ID"]);
-                    status.description = dsStatusDetail.Tables[0].Rows[0]["Description"].ToString();
+                    status.Id = Convert.ToInt32(dsStatusDetail.Tables[0].Rows[0]["ID"]);
+                    status.Description = dsStatusDetail.Tables[0].Rows[0]["Description"].ToString();
                 }
             }
 
@@ -50,8 +50,8 @@ namespace Sogeti.ProjectsAndProposals.Database
                     foreach (DataRow row in dsStatusDetails.Tables[0].Rows)
                     {
                         status = new DataObjects.Status();
-                        status.id = Convert.ToInt32(row["id"]);
-                        status.description = row["Description"].ToString();
+                        status.Id = Convert.ToInt32(row["id"]);
+                        status.Description = row["Description"].ToString();
 
                         statusList.Add(status);
                     }

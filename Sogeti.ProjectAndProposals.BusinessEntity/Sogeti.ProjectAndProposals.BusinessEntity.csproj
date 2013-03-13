@@ -39,14 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="ProjectStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Status.cs" />
-    <Compile Include="Title.cs" />
+    <Compile Include="StatusCategory.cs" />
+    <Compile Include="StatusItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sogeti.ProjectAndProposals.Database\Sogeti.ProjectsAndProposals.Database.csproj">

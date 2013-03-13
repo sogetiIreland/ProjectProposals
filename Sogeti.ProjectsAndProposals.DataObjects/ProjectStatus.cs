@@ -8,21 +8,23 @@ namespace Sogeti.ProjectsAndProposals.DataObjects
 {
     public class ProjectStatus
     {
+        #region Constructors
         public ProjectStatus()
         {
         }
 
-        public ProjectStatus(int id, List<Category> category, DateTime date, string comment)
+        public ProjectStatus(int id, List<StatusCategory> category, DateTime date, string comment)
         {
-            this.id = id;
-            this.category = category;
-            this.date = date;
-            this.comment = comment;
+            this.Id = id;
+            this.Category = category;
+            this.Date = date;
         }
+        #endregion
 
-        public int id { get; set; }
-        public List<Category> category { get; set; }
-        public DateTime date { get; set; }
-        public string comment { get; set; }
+        #region Properties
+        public int Id { get; set; }
+        public List<StatusCategory> Category { get; set; }
+        public DateTime Date { get; set; }
+        #endregion
     }
 }

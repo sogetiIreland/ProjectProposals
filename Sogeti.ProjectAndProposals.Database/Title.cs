@@ -12,23 +12,23 @@ namespace Sogeti.ProjectsAndProposals.Database
 {
     public class Title
     {
-        public static DataObjects.Title GetTitle(int id, int statusID)
+        public static DataObjects.StatusItem GetTitle(int id, int statusID)
         {
             SqlParameter param = new SqlParameter("ID", typeof(System.Int32));
             param.Value = id;
             List<SqlParameter> paramList = new List<SqlParameter>();
             paramList.Add(param);
 
-            DataObjects.Title title = new DataObjects.Title();
+            DataObjects.StatusItem title = new DataObjects.StatusItem();
 
             Database.Generics genDB = new Generics();
             using (DataSet dsTitleDetail = genDB.GetDataFromDB("SELECT * FROM Category WHERE ID = @ID", CommandType.Text, paramList))
             {
                 if ((dsTitleDetail != null) && (dsTitleDetail.Tables.Count > 0))
                 {
-                    title.id = Convert.ToInt32(dsTitleDetail.Tables[0].Rows[0]["id"]);
-                    title.description = dsTitleDetail.Tables[0].Rows[0]["Description"].ToString();
-                    title.status = Database.Status.GetStatus(statusID);
+                    title.Id = Convert.ToInt32(dsTitleDetail.Tables[0].Rows[0]["id"]);
+                    title.Title = dsTitleDetail.Tables[0].Rows[0]["Description"].ToString();
+                    title.Status = Database.Status.GetStatus(statusID);
                 }
             }
 
@@ -36,27 +36,27 @@ namespace Sogeti.ProjectsAndProposals.Database
         }
 
 
-        public static List<DataObjects.Title> GetTitles(int categoryID, int statusID)
+        public static List<DataObjects.StatusItem> GetTitles(int categoryID, int statusID)
         {
             SqlParameter param = new SqlParameter("@categoryID", typeof(System.Int32));
             param.Value = categoryID;
             List<SqlParameter> paramList = new List<SqlParameter>();
             paramList.Add(param);
 
-            List<DataObjects.Title> titles = new List<DataObjects.Title>();
-            DataObjects.Title title;
+            List<DataObjects.StatusItem> titles = new List<DataObjects.StatusItem>();
+            DataObjects.StatusItem title;
 
             Database.Generics genDB = new Generics();
-            using (DataSet dsTitleDetail = genDB.GetDataFromDB("SELECT * FROM Title WHERE CategoryID = @categoryID", CommandType.Text, paramList))
+            using (DataSet dsTitleDetail = genDB.GetDataFromDB("SELECT * FROM CategoryItem WHERE CategoryID = @categoryID", CommandType.Text, paramList))
             {
                 if ((dsTitleDetail != null) && (dsTitleDetail.Tables.Count > 0))
                 {
                     foreach (DataRow row in dsTitleDetail.Tables[0].Rows)
                     {
-                        title = new DataObjects.Title();
-                        title.id = Convert.ToInt32(row["id"]);
-                        title.description = row["Description"].ToString();
-                        title.status = Database.Status.GetStatus (statusID);
+                        title = new DataObjects.StatusItem();
+                        title.Id = Convert.ToInt32(row["id"]);
+                        title.Title = row["Title"].ToString();
+                        title.Status = Database.Status.GetStatus (statusID);
 
                         titles.Add(title);
                     }
