@@ -16,3 +16,12 @@ C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAn
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Debug\Sogeti.ProjectAndProposals.BusinessEntity.csprojResolveAssemblyReference.cache
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Debug\Sogeti.ProjectAndProposals.BusinessEntity.dll
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Debug\Sogeti.ProjectAndProposals.BusinessEntity.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Debug\Sogeti.ProjectAndProposals.BusinessEntity.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Debug\Sogeti.ProjectAndProposals.BusinessEntity.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Debug\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Debug\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Debug\Sogeti.ProjectAndProposals.BusinessEntity.csprojResolveAssemblyReference.cache
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Debug\Sogeti.ProjectAndProposals.BusinessEntity.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.BusinessEntity\obj\Debug\Sogeti.ProjectAndProposals.BusinessEntity.pdb

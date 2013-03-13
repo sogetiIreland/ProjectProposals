@@ -12,3 +12,10 @@ C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAn
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectsAndProposals.Database.csprojResolveAssemblyReference.cache
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectAndProposals.Database.dll
 C:\Users\bhollywo\Documents\Visual Studio 2012\ProjectProposals\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectAndProposals.Database.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\bin\Debug\Sogeti.ProjectsAndProposals.DataObjects.pdb
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectsAndProposals.Database.csprojResolveAssemblyReference.cache
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectAndProposals.Database.dll
+C:\Users\ababbasi\Documents\Sogeti\Project\ProjectProposals\ProjectProposals\Sogeti.ProjectAndProposals.Database\obj\Debug\Sogeti.ProjectAndProposals.Database.pdb
